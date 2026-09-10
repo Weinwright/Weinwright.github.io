@@ -1,0 +1,25 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.000
+In RAG, you have more state control than in an LLM.
+
+00:00:05.000 --> 00:00:07.000
+Here's what makes a RAG agentic.
+
+00:00:07.000 --> 00:00:11.000
+Instead of using hard-coded pipelines that say, “Do this, do this, do this, and this,”
+
+00:00:11.000 --> 00:00:15.000
+we're going to use an agent that says, “Here is an LLM. Here is a RAG tool.
+
+00:00:15.000 --> 00:00:17.000
+And maybe here's a web search tool or whatever.”
+
+00:00:17.000 --> 00:00:20.000
+Now, what I want you to do is take the data,
+
+00:00:20.000 --> 00:00:25.000
+get the data, input the data, and then be able to search the data.
+
+00:00:25.000 --> 00:00:28.000
+And then it just uses these tools to do these tasks, and you don't tell it...

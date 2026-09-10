@@ -1,0 +1,51 @@
+.topologyShell { overflow: hidden; border: 1px solid var(--line); border-radius: 14px; background: #fbfafb; }
+.topologyHeader { display: flex; align-items: flex-end; justify-content: space-between; gap: 32px; padding: 22px 24px; border-bottom: 1px solid var(--line); background: var(--surface); }
+.topologyHeader > div { display: grid; gap: 7px; }
+.topologyHeader strong { color: var(--text); font-size: 14px; font-weight: 600; }
+.topologyKicker, .hint { color: var(--muted); font-family: var(--font-mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+.topologyActions { justify-items: end; }
+.topologyActions button { min-height: 34px; padding: 7px 12px; border: 1px solid rgba(176,24,91,.32); border-radius: 999px; color: var(--accent); cursor: pointer; font-size: 10px; font-weight: 600; background: #ffffff; transition: color 160ms ease, background 160ms ease; }
+.topologyActions button:hover, .topologyActions button:focus-visible { color: #ffffff; background: var(--accent); outline: none; }
+.topologyActions button:disabled { cursor: default; opacity: .5; }
+.phaseRail { display: flex; align-items: center; gap: 14px; padding: 13px 28px; overflow-x: auto; border-bottom: 1px solid var(--line); color: var(--text); background: rgba(248, 246, 247, .96); scrollbar-width: none; }
+.phaseRail::-webkit-scrollbar { display: none; }
+.phaseRail span { display: flex; align-items: center; gap: 8px; flex: 0 0 auto; font-size: 11px; font-weight: 600; }
+.phaseRail i { color: var(--accent); font-family: var(--font-mono); font-size: 9px; font-style: normal; }
+.phaseRail b { color: var(--muted); font-family: var(--font-original); font-size: 11px; font-weight: 400; }
+.canvas { width: 100%; height: 620px; border-bottom: 1px solid var(--line); }
+.node { position: relative; display: grid; width: 218px; min-height: 112px; gap: 8px; padding: 16px 18px; overflow: hidden; border: 1px solid rgba(33,25,29,.18); border-left-width: 3px; border-radius: 8px; color: var(--text); cursor: pointer; background: #ffffff; box-shadow: 0 8px 22px rgba(44,26,35,.07); transition: border-color 160ms ease, box-shadow 160ms ease; }
+.node:hover, .selected { border-color: var(--accent); }
+.node.selected { z-index: 20; box-shadow: 0 10px 28px rgba(176,24,91,.14); }
+.node.input { border-left-color: #8f7a84; }
+.node.automation { border-left-color: var(--cyan); }
+.node.assisted { border-left-color: var(--violet); }
+.node.production { border-left-color: var(--accent); }
+.node.human { border-left-color: var(--gold); }
+.node.output { border-left-color: var(--accent); }
+.nodeTopline { display: flex; align-items: center; justify-content: space-between; color: var(--muted); font-family: var(--font-mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
+.node strong { font-size: 17px; font-weight: 650; letter-spacing: -.02em; }
+.engine { overflow: hidden; color: var(--soft); font-family: var(--font-mono); font-size: 10px; line-height: 1.45; text-overflow: ellipsis; white-space: nowrap; }
+.expandHint { color: var(--muted); font-family: var(--font-mono); font-size: 9px; letter-spacing: .08em; text-transform: uppercase; }
+.detailPanel { display: grid; gap: 20px; padding: 26px 28px 30px; border-top: 1px solid var(--line); background: var(--surface); }
+.detailPanel > p { max-width: 780px; color: var(--soft); font-size: 13px; line-height: 1.65; }
+.detailHeading { display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; }
+.detailHeading > div { display: grid; gap: 6px; }
+.detailHeading span { color: var(--accent); font-family: var(--font-mono); font-size: 10px; letter-spacing: .09em; text-transform: uppercase; }
+.detailHeading h3 { font-size: 20px; font-weight: 600; letter-spacing: -.02em; }
+.detailHeading button { display: grid; width: 32px; height: 32px; flex: 0 0 32px; place-items: center; border: 1px solid var(--line); border-radius: 50%; color: var(--muted); cursor: pointer; font-family: var(--font-original); font-size: 20px; background: #ffffff; }
+.detailHeading button:hover, .detailHeading button:focus-visible { border-color: var(--accent); color: #ffffff; background: var(--accent); outline: none; }
+.expandedMeta { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px 28px; }
+.expandedMeta div { display: grid; gap: 5px; }
+.expandedMeta span { color: var(--accent); font-family: var(--font-mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; }
+.expandedMeta b { color: var(--text); font-size: 11px; font-weight: 500; line-height: 1.5; }
+.status { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+.human .status { background: var(--gold); }
+.assisted .status { background: var(--violet); }
+.automation .status { background: var(--cyan); }
+.handle { width: 7px !important; height: 7px !important; border: 1px solid #8f7a84 !important; background: #ffffff !important; }
+.canvas :global(.react-flow__controls) { overflow: hidden; border: 1px solid var(--line); border-radius: 6px; box-shadow: none; }
+.canvas :global(.react-flow__controls-button) { border-bottom-color: var(--line); color: var(--text); background: #ffffff; }
+.canvas :global(.react-flow__controls-button svg) { fill: currentColor; }
+.canvas :global(.react-flow__edge-text) { fill: var(--gold); font-family: var(--font-mono); font-size: 10px; }
+.canvas :global(.react-flow__edge-textbg) { fill: #ffffff; }
+@media (max-width: 800px) { .topologyHeader { align-items: flex-start; flex-direction: column; gap: 12px; } .topologyActions { width: 100%; justify-items: start; } .phaseRail { padding-inline: 20px; } .canvas { height: 560px; } .detailPanel { padding: 22px 20px 26px; } .expandedMeta { grid-template-columns: 1fr; } }

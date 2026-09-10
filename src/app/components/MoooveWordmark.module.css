@@ -1,0 +1,42 @@
+.wordmark {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 390px;
+  justify-content: flex-end;
+  gap: .18em;
+  perspective: 700px;
+  perspective-origin: 50% 50%;
+  color: #929292;
+  font-family: var(--font-mono);
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: .03em;
+  line-height: 1.4;
+  cursor: grab;
+}
+
+.wordmark span {
+  display: inline-block;
+  min-width: .18em;
+  color: #929292;
+  transform-style: preserve-3d;
+  backface-visibility: visible;
+  transition: transform 180ms cubic-bezier(.2, .8, .2, 1);
+  will-change: transform;
+}
+
+.wordmark span:hover {
+  transform: translate3d(0, -.16em, 8px) rotateX(-10deg) rotateY(18deg) rotateZ(-4deg) scale(1.08);
+  cursor: grabbing;
+}
+
+.wordmark span:nth-child(6) { margin-left: .68em; }
+
+@media (max-width: 800px) {
+  .wordmark { justify-content: flex-start; }
+  .wordmark span:nth-child(6) { margin-left: .58em; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wordmark span { transition: none; }
+}

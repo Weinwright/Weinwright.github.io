@@ -1,0 +1,25 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:05.000
+And I want this to be very clear in how this works.
+
+00:00:07.040 --> 00:00:10.140
+It's not the LLM itself running the function.
+
+00:00:10.140 --> 00:00:13.340
+Instead, what the LLM is doing is taking
+
+00:00:13.340 --> 00:00:16.780
+the function description, the name of the function, and the inputs of the function,
+
+00:00:16.780 --> 00:00:20.040
+a description of what the function does, and an expected output.
+
+00:00:20.040 --> 00:00:22.580
+And it's taking that and passing it to the runtime,
+
+00:00:22.580 --> 00:00:25.380
+which in our case—later—we'll look at Python.
+
+00:00:25.380 --> 00:00:27.780
+It's taking that and passing it to the runtime.

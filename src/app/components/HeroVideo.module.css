@@ -1,0 +1,129 @@
+.previewButton {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  border: 0;
+  border-radius: 11px;
+  color: inherit;
+  cursor: pointer;
+  background: #050305;
+}
+
+.previewButton video {
+  width: 100%;
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.playPrompt {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  border: 1px solid rgba(255, 255, 255, .18);
+  border-radius: 6px;
+  color: #fff7fb;
+  font-size: 10px;
+  font-weight: 600;
+  background: rgba(12, 7, 11, .82);
+  transition: color 160ms ease, background 160ms ease;
+}
+
+.playPrompt i {
+  color: var(--accent);
+  font-family: var(--font-original);
+  font-size: 9px;
+  font-style: normal;
+}
+
+.previewButton:hover .playPrompt,
+.previewButton:focus-visible .playPrompt {
+  color: #ffffff;
+  background: var(--accent);
+}
+
+.previewButton:hover .playPrompt i,
+.previewButton:focus-visible .playPrompt i {
+  color: #ffffff;
+}
+
+.previewButton:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.modalBackdrop {
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  display: grid;
+  padding: 28px;
+  place-items: center;
+  background: rgba(5, 3, 5, .92);
+}
+
+.modalPlayer {
+  position: relative;
+  width: min(430px, 86vw);
+  max-height: 90vh;
+}
+
+.modalPlayer video {
+  width: 100%;
+  max-height: 90vh;
+  border: 1px solid rgba(255, 181, 219, .3);
+  border-radius: 12px;
+  background: #050305;
+  box-shadow: 0 36px 100px rgba(0, 0, 0, .64);
+}
+
+.closeButton {
+  position: absolute;
+  z-index: 2;
+  top: -14px;
+  right: -14px;
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, .22);
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  font-family: var(--font-original);
+  font-size: 23px;
+  line-height: 1;
+  background: #241721;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .4);
+}
+
+.closeButton:hover,
+.closeButton:focus-visible {
+  color: #ffffff;
+  background: var(--accent);
+  outline: none;
+}
+
+@media (max-width: 520px) {
+  .modalBackdrop { padding: 18px; }
+  .modalPlayer { width: min(360px, 88vw); }
+  .closeButton { top: -10px; right: -10px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .playPrompt { transition: none; }
+}

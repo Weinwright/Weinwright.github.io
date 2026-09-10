@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.040
+The other thing that really sucks is the compounding errors.
+
+00:00:04.040 --> 00:00:07.320
+So if you have an agent that is 99% accurate,
+
+00:00:07.320 --> 00:00:11.120
+across 50 tasks or something, that agent only becomes half accurate.
+
+00:00:11.120 --> 00:00:15.200
+So compounding errors are something that you have to pay attention to.
+
+00:00:15.200 --> 00:00:17.960
+Because if anything goes wrong, you—

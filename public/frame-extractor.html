@@ -1,0 +1,21 @@
+<!doctype html>
+<meta charset="utf-8">
+<style>
+  * { box-sizing: border-box; }
+  html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; background: #000; }
+  video { position: absolute; width: 100%; height: 100%; object-fit: cover; }
+</style>
+<video id="video" muted playsinline preload="auto"></video>
+<script>
+  const query = new URLSearchParams(location.search);
+  const video = document.querySelector("#video");
+  video.src = query.get("src");
+  video.addEventListener("loadedmetadata", () => {
+    document.title = `${video.videoWidth}x${video.videoHeight} / ${video.duration.toFixed(2)}s`;
+    video.currentTime = video.duration * Number(query.get("p") || .5);
+  });
+  video.addEventListener("seeked", async () => {
+    await video.play();
+    setTimeout(() => video.pause(), 180);
+  });
+</script>

@@ -1,0 +1,34 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.280
+So router agents are things where you have an agent that essentially uses a router
+
+00:00:04.280 --> 00:00:08.200
+that sits in front of it and calls other functions or potentially other agents.
+
+00:00:08.200 --> 00:00:11.440
+It can be workflows. It can be agents. It can be whatever.
+
+00:00:12.280 --> 00:00:15.160
+And the router that sits in front of it doesn't have to be an agent.
+
+00:00:15.480 --> 00:00:18.460
+It can be an if-then statement, an algorithm, whatever.
+
+00:00:18.880 --> 00:00:22.280
+And then you evolve from router agents into these things called orchestration agents.
+
+00:00:22.280 --> 00:00:28.000
+So orchestration agents are, essentially, like—you can think about the router. Router agents...
+
+00:00:28.000 --> 00:00:30.640
+...go one way. With orchestration agents, you come into the router,
+
+00:00:30.640 --> 00:00:34.200
+or in this case the orchestrator, and it can get information back from the agents.
+
+00:00:34.200 --> 00:00:36.040
+They can kind of work like this.
+
+00:00:36.040 --> 00:00:41.840
+So it goes back and forth between the different things and accomplishes more complex tasks.

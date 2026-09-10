@@ -1,0 +1,54 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/tools/
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# Original 4K source kept locally; the site uses the optimized web copy.
+/public/media/additional/lucid-golden-moon.mp4
+
+# NDA work belongs only in the separate private portfolio repository.
+/public/media/yandex-rover/
+/public/media/how/
+/public/media/additional/how.mp4
+/public/media/covers/how.png
+/src/app/yandex-rover/
+/src/app/how/
+
+# misc
+.DS_Store
+*.pem
+/NUL
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts

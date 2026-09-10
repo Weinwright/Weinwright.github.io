@@ -1,0 +1,40 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.120
+And make sure that you're not just drawing from the LLM's knowledge itself,
+
+00:00:03.120 --> 00:00:07.040
+but your personal data, your personal knowledge, or your private data and private knowledge.
+
+00:00:07.040 --> 00:00:11.840
+Then, of course, in RAG, you have more state control than an LLM.
+
+00:00:12.200 --> 00:00:14.840
+Here's what makes a RAG agentic.
+
+00:00:14.840 --> 00:00:19.160
+Instead of using hard-coded pipelines that say, “Do this, do this, do this, and this,”
+
+00:00:19.160 --> 00:00:25.440
+we're going to use an agent that says, “Here is an LLM. Here is a RAG tool, and maybe here's a web search tool.”
+
+00:00:25.440 --> 00:00:32.200
+Now, what I want you to do is take the data, get the data, and input the data,
+
+00:00:32.200 --> 00:00:38.000
+and then be able to search the data. It uses these tools to do these tasks,
+
+00:00:38.000 --> 00:00:41.960
+and you don't tell it to do all of it in that order. You give it the tools and it does the tasks.
+
+00:00:44.680 --> 00:00:49.400
+Typically there are ways that you can retry queries, so it won't just be, “Oh, this broke.”
+
+00:00:49.400 --> 00:00:52.720
+What broke in the pipeline? Why did it break?
+
+00:00:52.720 --> 00:00:55.480
+Is this something I can retry? Is there something I can fix here?
+
+00:00:55.480 --> 00:00:59.520
+There's more of this looping mechanism that you can implement.
