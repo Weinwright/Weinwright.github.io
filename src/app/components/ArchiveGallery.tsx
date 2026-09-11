@@ -18,18 +18,18 @@ type ArchiveItem = {
 const privateSiteUrl = (process.env.NEXT_PUBLIC_PRIVATE_SITE_URL ?? "https://private.epushkina.com").replace(/\/$/, "");
 
 const archiveItems: ArchiveItem[] = [
-  { href: "/oss4ai", poster: "/media/posters/agents-together.jpg", video: "/media/oss4ai-card-loop.mp4", label: "OSS4AI" },
+  { href: "/oss4ai", poster: "/media/posters/agents-together.jpg", video: "/media/additional/oss4ai-gmt.mp4", label: "OSS4AI" },
   { href: `${privateSiteUrl}/yandex-rover/`, video: "/media/private-previews/yandex-rover-preview.mp4", privatePreview: "rover", label: "Private case study" },
   { href: `${privateSiteUrl}/how/`, video: "/media/private-previews/how-preview.mp4", privatePreview: "systems", label: "Private case study" },
   { href: "/seattle-startup-summit", poster: "/media/covers/seattle.png", video: "/media/additional/seattle-startup-summit.mp4", label: "Seattle Startup Summit" },
   { href: "/claude", poster: "/media/covers/claude.png", video: "/media/additional/claude-final.mp4", label: "Claude" },
   { href: "/lucid-bots", poster: "/media/covers/lucid-bots.png", video: "/media/additional/lucid-golden-moon-web.mp4", label: "Lucid Bots" },
   { href: "/heygen", poster: "/media/heygen/poster.png", video: "/media/heygen/campaign.mp4", label: "HeyGen Creator Campaign" },
-  { href: "/sony-music-entertainment", poster: "/media/covers/sony.png", video: "/media/additional/sony-rum-1.mp4", label: "Sony Music Entertainment" },
-  { href: "/double-slit-experiment", poster: "/media/covers/double-slit.jpg", label: "Double-Slit Experiment" },
-  { href: "/how-do-we-see", poster: "/media/covers/how-do-we-see.jpg", label: "How Do We See" },
-  { href: "/animated-character", poster: "/media/covers/animated-character.jpg", label: "Animated Character" },
+  { href: "/how-do-we-see", poster: "/media/covers/how-do-we-see.jpg", video: "/media/additional/how-do-we-see.mp4", label: "How Do We See" },
+  { href: "/double-slit-experiment", poster: "/media/covers/double-slit.jpg", video: "/media/additional/double-slit.mp4", label: "Double-Slit Experiment" },
   { href: "/logo-animation-summit-invest", poster: "/media/covers/summit-invest.png", video: "/media/additional/logo-animation-summit-invest.mp4", label: "SummitInvest" },
+  { href: "/animated-character", poster: "/media/covers/animated-character.jpg", video: "/media/additional/animated-character.mp4", label: "Animated Character" },
+  { href: "/sony-music-entertainment", poster: "/media/covers/sony.png", video: "/media/additional/sony-rum-1.mp4", label: "Sony Music Entertainment" },
 ];
 
 function GridIcon({ dense = false }: { dense?: boolean }) {
@@ -55,7 +55,7 @@ export default function ArchiveGallery() {
   return (
     <section id="selected-work" className={`${styles.section} ${styles.selectedWork}`}>
       <div className={styles.archiveToolbar}>
-        <div className={styles.sectionLabel}>Archives</div>
+        <div className={styles.sectionLabel}>Works</div>
         <div className={styles.archiveControls}>
           <GridIcon />
           <input

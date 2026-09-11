@@ -1,7 +1,10 @@
 .page {
+  --font-original: var(--font-inter), Arial, sans-serif;
+  --font-mono: var(--font-inter), Arial, sans-serif;
   position: relative;
   min-height: 100vh;
   overflow: hidden;
+  font-family: var(--font-inter), Arial, sans-serif;
   background: var(--background);
 }
 

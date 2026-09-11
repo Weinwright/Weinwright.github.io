@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import ArchiveGallery from "./components/ArchiveGallery";
 import MoooveWordmark from "./components/MoooveWordmark";
@@ -50,7 +51,7 @@ export default function Home() {
       <header className={styles.header}>
         <Link href="#top" className={styles.name}>Ekaterina Pushkina</Link>
         <nav aria-label="Portfolio navigation">
-          <a href="#selected-work">Selected work</a>
+          <a href="#selected-work">Works</a>
           <a href="#about">About me</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -67,13 +68,33 @@ export default function Home() {
 
       <section id="about" className={`${styles.section} ${styles.about}`}>
         <div className={styles.sectionLabel}>About me</div>
-        <p>I’m Ekaterina, a Seattle-based GenAI creative technologist and motion designer with six years of experience. I turn complex ideas into clear visual stories and build reusable systems that help ambitious creative work scale.</p>
+        <div className={styles.aboutContent}>
+          <div>
+            <p>I’m Ekaterina, a Seattle-based GenAI creative technologist and motion designer with six years of experience. I turn complex ideas into clear visual stories and build reusable systems that help ambitious creative work scale.</p>
+            <div className={styles.aboutInvite}>
+              <p>Let’s work together</p>
+              <div className={styles.aboutSmile} aria-hidden="true">(˶&gt; ᵕ &lt;˶)</div>
+            </div>
+          </div>
+          <div className={styles.aboutPhotoWrap}>
+            <Image
+              className={styles.aboutPhoto}
+              src="/media/about/ekaterina.jpg"
+              alt="Ekaterina Pushkina sitting on a vintage truck among spring flowers"
+              width={960}
+              height={1280}
+              sizes="(max-width: 800px) 160px, 200px"
+            />
+          </div>
+        </div>
       </section>
 
       <section id="contact" className={`${styles.section} ${styles.contact}`}>
         <div className={styles.sectionLabel}>Contact</div>
-        <a href="mailto:pushkina.katrine@gmail.com">pushkina.katrine@gmail.com</a>
-        <a href="https://www.linkedin.com/in/ekaterina-pushkina-768b86244/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <div className={styles.contactLinks}>
+          <a href="mailto:pushkina.katrine@gmail.com">pushkina.katrine@gmail.com</a>
+          <a href="https://www.linkedin.com/in/ekaterina-pushkina-768b86244/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
       </section>
 
       <footer className={styles.footer}><span>Ekaterina Pushkina</span><a href="#top">Back to top <span className="iconGlyph">↑</span></a></footer>

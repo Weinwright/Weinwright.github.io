@@ -144,6 +144,14 @@
   .privatePreview::after,
   .privatePreview span { animation: none; }
 }
+.aboutContent {
+  display: grid;
+  grid-template-columns: minmax(0, 820px) auto;
+  align-items: start;
+  justify-content: space-between;
+  gap: 48px;
+}
+.about { padding-bottom: 24px; }
 .about p {
   max-width: 820px;
   color: var(--ink);
@@ -152,7 +160,34 @@
   line-height: 1.4;
   letter-spacing: 0;
 }
-.contact { display: grid; gap: 16px; }
+.aboutPhotoWrap {
+  width: clamp(150px, 16vw, 200px);
+  justify-self: end;
+}
+.aboutPhoto {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+.aboutInvite { margin-top: 32px; }
+.aboutInvite p {
+  color: var(--muted);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+.aboutSmile {
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: clamp(26px, 3.4vw, 44px);
+  font-weight: 300;
+  letter-spacing: -.04em;
+  line-height: 1;
+  white-space: nowrap;
+}
+.contact { padding-top: 24px; }
+.contactLinks { display: grid; gap: 16px; justify-items: start; }
 .contact a { width: max-content; color: var(--ink); font-size: 16px; font-weight: 300; letter-spacing: 0; line-height: 1.4; }
 .footer { display: flex; justify-content: space-between; padding: 32px 0 50px; }
 .footer a { color: var(--muted); font-size: 12px; font-weight: 300; line-height: 1.4; }
@@ -167,6 +202,10 @@
   .section { padding: 72px 0; }
   .selectedWork { padding-top: 36px; }
   .archiveToolbar { padding: 14px 0; }
+  .aboutContent { grid-template-columns: 1fr; gap: 32px; }
+  .about { padding-bottom: 20px; }
   .about p { font-size: 12px; }
+  .aboutPhotoWrap { width: 160px; }
+  .contact { padding-top: 20px; }
   .footer { gap: 20px; }
 }

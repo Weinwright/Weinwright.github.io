@@ -1,4 +1,4 @@
-.page { min-height: 100vh; color: #21191d; background: #fbfaf9; }
+.page { --font-original: var(--font-inter), Arial, sans-serif; --font-mono: var(--font-inter), Arial, sans-serif; min-height: 100vh; color: #21191d; background: #fbfaf9; font-family: var(--font-inter), Arial, sans-serif; }
 .header, .hero { width: min(1240px, calc(100% - 80px)); margin-inline: auto; }
 .header { display: flex; gap: 12px; align-items: center; min-height: 76px; border-bottom: 1px solid rgba(31, 26, 29, .12); color: #766d72; font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: .08em; }
 .header a { color: #21191d; }

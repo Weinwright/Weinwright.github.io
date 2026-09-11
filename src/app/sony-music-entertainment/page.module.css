@@ -1,10 +1,13 @@
 .page {
+  --font-original: var(--font-inter), Arial, sans-serif;
+  --font-mono: var(--font-inter), Arial, sans-serif;
   --accent: #bd1732;
   --ink: #1e191b;
   --soft: #5d5559;
   --muted: #80767b;
   --line: rgba(30, 25, 27, .14);
   min-height: 100vh;
+  font-family: var(--font-inter), Arial, sans-serif;
   color: var(--ink);
   background: #fbf9f8;
 }
