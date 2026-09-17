@@ -198,10 +198,12 @@
   .header nav { width: 100%; gap: 24px; overflow-x: auto; padding: 14px 0; white-space: nowrap; }
   .hero { grid-template-columns: 1fr; gap: 28px; padding: 40px 0; }
   .hero h1 { font-size: 12px; }
-  .heroInteractive { justify-self: start; }
+  .heroInteractive { display: none; }
   .section { padding: 72px 0; }
   .selectedWork { padding-top: 36px; }
   .archiveToolbar { padding: 14px 0; }
+  .archiveControls { display: none; }
+  .workGrid { grid-template-columns: 1fr; }
   .aboutContent { grid-template-columns: 1fr; gap: 32px; }
   .about { padding-bottom: 20px; }
   .about p { font-size: 12px; }
