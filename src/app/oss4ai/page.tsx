@@ -36,10 +36,10 @@ export default function Home() {
     <main id="top" className={styles.page}>
       <a className={styles.skipLink} href="#main-content">Skip to case study</a>
       <header className={styles.siteHeader}>
-        <a href="#top" className={styles.identity} aria-label="Back to the top">
+        <Link href="/" className={styles.identity} aria-label="Go to the homepage">
           <span>EP</span>
           <div><strong>Ekaterina Pushkina</strong><small>Motion Designer</small></div>
-        </a>
+        </Link>
         <nav aria-label="Case study navigation">
           <a href="#topology">Workflow</a><a href="#editorial">Decision model</a><a href="#outputs">Selected work</a>
         </nav>

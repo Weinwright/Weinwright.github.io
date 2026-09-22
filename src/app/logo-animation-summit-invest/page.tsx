@@ -4,8 +4,8 @@ import { createPageMetadata } from "../seo";
 import styles from "./page.module.css";
 
 export const metadata = createPageMetadata({
-  title: "SummitInvest — Logo Animation",
-  description: "A concise brand animation created for an investment-assistance app.",
+  title: "SummitInvest — Logo Design & Animation",
+  description: "A brand identity and motion system connecting SummitInvest’s Washington roots with investment, growth, and forward progress.",
   path: "/logo-animation-summit-invest/",
   image: "/media/covers/summit-invest.png",
   imageAlt: "SummitInvest logo animation",
@@ -32,9 +32,9 @@ export default function SummitInvest() {
 
       <section className={styles.hero}>
         <div className={styles.heroCopy}>
-          <p className={styles.eyebrow}>Logo Animation</p>
+          <p className={styles.eyebrow}>Logo Design &amp; Animation</p>
           <h1>SummitInvest</h1>
-          <p className={styles.heroLead}>A concise brand animation created for an investment-assistance app, translating its identity into a sense of clarity, progress, and confidence.</p>
+          <p className={styles.heroLead}>A visual identity for a Washington-based investment-assistance startup, connecting the company’s regional roots with investment, growth, and forward progress.</p>
         </div>
 
         <figure className={styles.heroFilm}>
@@ -48,44 +48,49 @@ export default function SummitInvest() {
 
       <section className={styles.overview} aria-label="Project overview">
         <dl>
-          <div><dt>Role</dt><dd>Motion Design · Animation · Sound Design</dd></div>
-          <div><dt>Project</dt><dd>Logo animation for an investment-assistance app</dd></div>
-          <div><dt>Format</dt><dd>8-second brand animation</dd></div>
+          <div><dt>Subject</dt><dd>SummitInvest, a Washington-based investment-assistance startup</dd></div>
+          <div><dt>Goal</dt><dd>Create a visual identity connecting the company’s regional roots with investment, growth, and forward progress</dd></div>
+          <div><dt>My role</dt><dd>Logo Design · Visual Development · Motion Design · Animation · Sound Design</dd></div>
         </dl>
       </section>
 
       <section className={styles.section}>
-        <SectionLabel number="01">Challenge</SectionLabel>
+        <SectionLabel number="01">Overview</SectionLabel>
         <div className={styles.textSection}>
-          <h3>A static identity needed a motion behavior.</h3>
-          <p>The static identity needed a motion behavior that could communicate SummitInvest’s role as a clear, modern investment assistant while remaining recognizable at different sizes and across multiple digital touchpoints.</p>
+          <p>I designed the logo and developed its motion behavior, creating a cohesive identity that connects SummitInvest’s Washington roots with the ideas of investment, growth, and forward progress.</p>
+        </div>
+        <figure className={styles.challengeVisual}>
+          <Image
+            src="/media/summit-invest/summit-logo.png"
+            alt="SummitInvest logo with an ascending investment graph"
+            width={1920}
+            height={1080}
+            sizes="(max-width: 800px) 68vw, 440px"
+          />
+        </figure>
+      </section>
+
+      <section className={styles.section}>
+        <SectionLabel number="02">Concept Development</SectionLabel>
+        <div className={styles.textSection}>
+          <div className={styles.bodyCopy}>
+            <p>The client wanted the identity to reference Washington State, making mountains an important starting point. I combined the mountain silhouette with an upward-moving arrow inspired by investment and financial charts.</p>
+            <p>The rising line forms part of the mountain itself and resolves into an arrow, bringing the geographic and financial references together in one symbol. A minimal geometric structure keeps the mark recognizable and versatile.</p>
+          </div>
         </div>
       </section>
 
       <section className={styles.section}>
-        <SectionLabel number="02">Approach</SectionLabel>
-        <div className={styles.textSection}>
-          <h3>Controlled pacing. Purposeful movement.</h3>
-          <p>I animated the existing logo with controlled pacing and purposeful movement, reinforcing the brand’s focus on guided decision-making while keeping the result polished and adaptable.</p>
-        </div>
-        <div className={styles.frameSequence} aria-label="SummitInvest animation sequence">
-          <figure><Image src="/media/summit-invest/summit-01.png" alt="SummitInvest logo assembling" fill sizes="(max-width: 800px) 100vw, 260px" /></figure>
-          <figure><Image src="/media/summit-invest/summit-02.png" alt="Circular investment symbol during the animation" fill sizes="(max-width: 800px) 100vw, 260px" /></figure>
-          <figure><Image src="/media/summit-invest/summit-03.png" alt="Completed SummitInvest logo" fill sizes="(max-width: 800px) 100vw, 260px" /></figure>
-        </div>
-      </section>
-
-      <section className={styles.section}>
-        <SectionLabel number="03">Outcome</SectionLabel>
+        <SectionLabel number="03">Role</SectionLabel>
         <div className={styles.outcome}>
-          <h3>A flexible logo animation.</h3>
-          <p>A flexible logo animation designed for product intros, social content, presentations, and branded transitions.</p>
-          <div><span>Product intros</span><span>Social content</span><span>Presentations</span><span>Brand transitions</span></div>
+          <h3>Identity and motion, developed as one system.</h3>
+          <p>I led the visual identity from concept through final animation, including the sound design for the completed motion piece.</p>
+          <div><span>Logo Design</span><span>Visual Development</span><span>Motion Design</span><span>Animation</span><span>Sound Design</span></div>
         </div>
       </section>
 
       <footer className={styles.footer}>
-        <div><span>Logo Animation</span><strong>SummitInvest</strong></div>
+        <div><span>Logo Design &amp; Animation</span><strong>SummitInvest</strong></div>
         <Link href="/">Selected work</Link>
         <a href="#top">Back to top <span className="iconGlyph">↑</span></a>
       </footer>

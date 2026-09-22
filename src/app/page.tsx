@@ -49,7 +49,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }}
       />
       <header className={styles.header}>
-        <Link href="#top" className={styles.name}>Ekaterina Pushkina</Link>
+        <Link href="/" className={styles.name}>Ekaterina Pushkina</Link>
         <nav aria-label="Portfolio navigation">
           <a href="#selected-work">Works</a>
           <a href="#about">About me</a>
